@@ -11,12 +11,29 @@ const todayFormatted = today.format('YYYY-MM-DD');
 // Header: YYYY-MM-DD — Weekday
 tR += `\n# ${todayFormatted} — ${today.format('dddd')}\n\n`;
 
-// Breadcrumb navigation
-tR += `[[${today.format('YYYY')}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] w')}]]\n`;
-
-// Day navigation
+// Breadcrumb navigation with year-spanning logic
 const prevDay = today.clone().subtract(1, 'day');
 const nextDay = today.clone().add(1, 'day');
+
+// Check if this day bridges two years
+const prevYear = prevDay.year();
+const currentYear = today.year();
+const nextYear = nextDay.year();
+
+let breadcrumb = `[[${today.format('YYYY')}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]`;
+
+// If previous day is in a different year (Jan 1)
+if (prevYear !== currentYear) {
+    breadcrumb = `[[${prevYear}]]  /  [[${prevDay.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${currentYear}]]`;
+}
+// If next day is in a different year (Dec 31)
+else if (nextYear !== currentYear) {
+    breadcrumb += `  /  [[${nextDay.format('YYYY-MM|MMMM')}]]  /  [[${nextYear}]]`;
+}
+
+tR += breadcrumb + '\n';
+
+// Day navigation
 tR += `❮  [[${prevDay.format('YYYY-MM-DD')}]]  |  ${todayFormatted}  |  [[${nextDay.format('YYYY-MM-DD')}]]  ❯\n`;
 %>
 ## Daily Journal Sections
