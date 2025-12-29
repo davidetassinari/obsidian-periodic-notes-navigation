@@ -1,5 +1,7 @@
 # Obsidian Periodic Notes Templates
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Minimal working templates for Obsidian periodic notes with proper ISO 8601 
 week-year handling for weeks that span calendar year boundaries.
 
