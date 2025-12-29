@@ -2,18 +2,18 @@
   "daily": {
     "format": "YYYY/MM-MMMM/YYYY-MM-DD",
     "folder": "Journal/Daily Journal",
-    "template": "Templates/Daily Journal Template",
+    "template": "Templates/daily-journal-template",
     "enabled": true
   },
   "weekly": {
     "format": "GGGG/GGGG-[W]WW",
-    "template": "Templates/Weekly Journal Template.md",
+    "template": "Templates/weekly-journal-template.md",
     "folder": "Journal/Weekly Journal",
     "enabled": true
   },
   "monthly": {
     "format": "YYYY/YYYY-MM",
-    "template": "Templates/Monthly Journal Template.md",
+    "template": "Templates/monthly-journal-template.md",
     "folder": "Journal/Monthly Journal",
     "enabled": true
   }

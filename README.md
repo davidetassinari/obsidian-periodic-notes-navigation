@@ -1,19 +1,26 @@
-# Obsidian Periodic Notes Templates
+# Obsidian Periodic Notes Breadcrumb Navigation Templates
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Minimal working templates for Obsidian periodic notes with proper ISO 8601 
-week-year handling for weeks that span calendar year boundaries.
+Templater code for Obsidian periodic notes that creates automated breadcrumb navigation with proper ISO 8601 week-year handling for weeks that span calendar year boundaries.
 
 ## Key Features
 
-- ISO 8601 compliant weekly notes
+- Automatic generation of title, creation date and breadcrumb navigation when creating a new note
+- ISO 8601 compliant week numbers
 - Automatic year-spanning week detection
-- Consistent date formatting across all periodic note types
+- Consistent look and date formatting across monthly, weekly and daily notes
+
+## Dependencies
+
+This 
+
+- [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
+- [Templater](https://github.com/SilentVoid13/Templater)
 
 ## Setup
 
-1. Install Periodic Notes plugin
+1. Install and enable Periodic Notes and Templater community plugins
 2. Copy templates to your vault
 3. Configure Periodic Notes settings (see [Periodic Notes Settings](configs/periodic-notes-data.json))
 
