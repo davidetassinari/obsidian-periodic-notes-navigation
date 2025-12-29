@@ -13,7 +13,7 @@ Templater code for Obsidian periodic notes that creates automated breadcrumb nav
 
 ## Dependencies
 
-This 
+This project relies on the Periodic Notes and Templater community plugins:
 
 - [Periodic Notes](https://github.com/liamcain/obsidian-periodic-notes)
 - [Templater](https://github.com/SilentVoid13/Templater)
@@ -21,7 +21,7 @@ This
 ## Setup
 
 1. Install and enable Periodic Notes and Templater community plugins
-2. Copy templates to your vault
+2. Copy templates to your `Templates` folder
 3. Configure Periodic Notes settings (see [Periodic Notes Settings](configs/periodic-notes-data.json))
 
 ## Documentation
