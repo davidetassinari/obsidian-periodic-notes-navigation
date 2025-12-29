@@ -40,10 +40,10 @@ let breadcrumb = `[[${startYear}]]  /  [[${startMonth}|${startMonthName}]]`;
 
 // If week spans two calendar years
 if (startCalYear !== endCalYear) {
-    breadcrumb += '  –  [[' + endYear + ']]  /  [[' + endMonth + '|' + endMonthName + ']]';
+    breadcrumb += `  –  [[${endMonth}|${endMonthName}]]  /  [[${endYear}]]`;
 } else if (weekStart.month() !== weekEnd.month()) {
     // Same year, different months
-    breadcrumb += '  –  [[' + endMonth + '|' + endMonthName + ']]';
+    breadcrumb += `  –  [[${endMonth}|${endMonthName}]]`;
 }
 
 tR += breadcrumb + '\n';
