@@ -57,15 +57,15 @@ This project relies on the Periodic Notes and Templater community plugins:
 **December 2025 and January 2026** (Final and Initial Months of the Year)
 
 ```
-[[2025]]  /  ❮ [[2025-11|November]]  |  December  |  [[2026-01|January]] ❯  /  [[2026]]
+[[2025]]  –  [[2026]]  /  ❮ [[2025-11|November]]  |  December  |  [[2026-01|January]] ❯  
 
-[[2025]]  /  ❮ [[2025-12|December]]  |  January  |  [[2026-02|February]] ❯  /  [[2026]]
+[[2025]]  –  [[2026]]  /  ❮ [[2025-12|December]]  |  January  |  [[2026-02|February]] ❯
 ```
 
 **Week 01 of 2026** (Week Starting on 29th December 2025 and Crossing Over into 2026)
 
 ```
-[[2025]]  /  [[2025-12|December]]  –  [[2026]]  /  [[2026-01|January]]
+[[2025]]  –  [[2026]]  /  [[2025-12|December]]  –  [[2026-01|January]]
 ❮  [[2025-W52|Week 52]]  |  Week 01  |  [[2026-W02|Week 02]]  ❯
 ```
 
@@ -79,12 +79,12 @@ This project relies on the Periodic Notes and Templater community plugins:
 **31st December 2025 and 1st January 2026** (Final and Initial Day of the Year)
 
 ```
-[[2025]]  /  [[2025-12|December]]  /  [[2026-W01|Week 01]]  /  [[2026-01|January]]  /  [[2026]]
+[[2025]]  –  [[2026]]  /  [[2025-12|December]]  –  [[2026-01|January]]  /  [[2026-W01|Week 01]]
 ❮  [[2025-12-30]]  |  2025-12-31  |  [[2026-01-01]]  ❯
 ```
 
 ```
-[[2025]]  /  [[2025-12|December]]  /  [[2026-W01|Week 01]]  /  [[2026-01|January]]  /  [[2026]]
+[[2025]]  –  [[2026]]  /  [[2025-12|December]]  –  [[2026-01|January]]  /  [[2026-W01|Week 01]]
 ❮  [[2025-12-31]]  |  2026-01-01  |  [[2026-01-02]]  ❯
 ```
 
