@@ -36,13 +36,17 @@ const endYear = weekEnd.format('YYYY');
 const endMonth = weekEnd.format('YYYY-MM');
 const endMonthName = weekEnd.format('MMMM');
 
-let breadcrumb = `[[${startYear}]]  /  [[${startMonth}|${startMonthName}]]`;
+let breadcrumb = `[[${startYear}]]`;
 
 // If week spans two calendar years
 if (startCalYear !== endCalYear) {
-    breadcrumb += `  –  [[${endMonth}|${endMonthName}]]  /  [[${endYear}]]`;
-} else if (weekStart.month() !== weekEnd.month()) {
-    // Same year, different months
+    breadcrumb += `  –  [[${endYear}]]`;
+}
+
+breadcrumb += `  /  [[${startMonth}|${startMonthName}]]`
+
+// If week spans two months
+if (weekStart.month() !== weekEnd.month()) {
     breadcrumb += `  –  [[${endMonth}|${endMonthName}]]`;
 }
 

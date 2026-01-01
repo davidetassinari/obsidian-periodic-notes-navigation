@@ -24,11 +24,11 @@ let breadcrumb = `[[${today.format('YYYY')}]]  /  [[${today.format('YYYY-MM|MMMM
 
 // If previous day is in a different year (Jan 1)
 if (prevYear !== currentYear) {
-    breadcrumb = `[[${prevYear}]]  /  [[${prevDay.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${currentYear}]]`;
+    breadcrumb = `[[${prevYear}]]  –  [[${currentYear}]]  /  [[${prevDay.format('YYYY-MM|MMMM')}]]  –  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]`;
 }
 // If next day is in a different year (Dec 31)
 else if (nextYear !== currentYear) {
-    breadcrumb += `  /  [[${nextDay.format('YYYY-MM|MMMM')}]]  /  [[${nextYear}]]`;
+    breadcrumb = `[[${currentYear}]]  –  [[${nextYear}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  –  [[${nextDay.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]`;
 }
 
 tR += breadcrumb + '\n';
