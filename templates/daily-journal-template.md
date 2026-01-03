@@ -20,15 +20,15 @@ const prevYear = prevDay.year();
 const currentYear = today.year();
 const nextYear = nextDay.year();
 
-let breadcrumb = `[[${today.format('YYYY')}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]`;
+let breadcrumb = `[[${today.format('YYYY')}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] W')}]]`;
 
 // If previous day is in a different year (Jan 1)
 if (prevYear !== currentYear) {
-    breadcrumb = `[[${prevYear}]]  –  [[${currentYear}]]  /  [[${prevDay.format('YYYY-MM|MMMM')}]]  –  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]`;
+    breadcrumb = `[[${prevYear}]]  –  [[${currentYear}]]  /  [[${prevDay.format('YYYY-MM|MMMM')}]]  –  [[${today.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] W')}]]`;
 }
 // If next day is in a different year (Dec 31)
 else if (nextYear !== currentYear) {
-    breadcrumb = `[[${currentYear}]]  –  [[${nextYear}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  –  [[${nextDay.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] WW')}]]`;
+    breadcrumb = `[[${currentYear}]]  –  [[${nextYear}]]  /  [[${today.format('YYYY-MM|MMMM')}]]  –  [[${nextDay.format('YYYY-MM|MMMM')}]]  /  [[${today.format('GGGG-[W]WW|[Week] W')}]]`;
 }
 
 tR += breadcrumb + '\n';

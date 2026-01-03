@@ -45,8 +45,8 @@ const weeks = new Set();
 // Iterate through each day of the month and collect unique weeks
 let current = startOfMonth.clone();
 while (current.isSameOrBefore(endOfMonth)) {
-    const weekFormat = current.format('GGGG-[W]ww');
-    const weekDisplay = current.format('[Week] ww');
+    const weekFormat = current.format('GGGG-[W]WW');
+    const weekDisplay = current.format('[Week] W');
     weeks.add(`- [[${weekFormat}|${weekDisplay}]]`);
     current.add(1, 'week').startOf('isoWeek');
 }
