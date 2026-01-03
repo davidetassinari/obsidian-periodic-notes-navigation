@@ -26,7 +26,7 @@ const endCalYear = weekEnd.year();
 const isoWeekYear = week.isoWeekYear();
 
 // Header: Week X of YYYY (using ISO week-year)
-tR += `\n# ${week.format('[Week] WW [of] GGGG')}\n\n`;
+tR += `\n# ${week.format('[Week] W [of] GGGG')}\n\n`;
 
 // Build navigation breadcrumb
 const startYear = weekStart.format('YYYY');
@@ -55,7 +55,7 @@ tR += breadcrumb + '\n';
 // Week navigation (using ISO week-year)
 const prevWeek = week.clone().subtract(1, 'week');
 const nextWeek = week.clone().add(1, 'week');
-tR += `❮  [[${prevWeek.format('GGGG-[W]WW')}|${prevWeek.format('[Week] WW')}]]  |  ${week.format('[Week] WW')}  |  [[${nextWeek.format('GGGG-[W]WW')}|${nextWeek.format('[Week] WW')}]]  ❯\n`;
+tR += `❮  [[${prevWeek.format('GGGG-[W]WW')}|${prevWeek.format('[Week] W')}]]  |  ${week.format('[Week] W')}  |  [[${nextWeek.format('GGGG-[W]WW')}|${nextWeek.format('[Week] W')}]]  ❯\n`;
 
 // Daily journal section
 tR += '\n## Daily Journal Entries for the Week\n\n';
