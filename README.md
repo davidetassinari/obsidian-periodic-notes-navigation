@@ -9,7 +9,10 @@ Templater code for Obsidian periodic notes that creates automated breadcrumb nav
 - Automatic generation of title, creation date and breadcrumb navigation when creating a new note
 - ISO 8601 compliant week numbers
 - Automatic year-spanning week detection
-- Consistent look and date formatting across monthly, weekly and daily notes
+- Consistent look and date formatting across yearly, monthly, weekly and daily notes
+- Automatic generation of months and weeks for the current year (with wikilinks)
+- Automatic generation of weeks for the current month (with wikilinks)
+- Automatic generation of days of the current week (with wikilinks)
 
 ## Dependencies
 
@@ -30,7 +33,11 @@ This project relies on the Periodic Notes and Templater community plugins:
 
 ## Examples
 
-### Standard Breadcrumbs for Monthly, Weekly and Daily Notes
+### Standard Breadcrumbs for Yearly, Monthly, Weekly and Daily Notes
+
+**2025**
+
+❮  [[2024]]  |  2025  |  [[2026]]  ❯
 
 **November 2025**
 

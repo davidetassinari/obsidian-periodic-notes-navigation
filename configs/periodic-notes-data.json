@@ -16,5 +16,11 @@
     "template": "Templates/monthly-journal-template.md",
     "folder": "Journal/Monthly Journal",
     "enabled": true
+  },
+  "yearly": {
+    "format": "YYYY",
+    "template": "Templates/yearly-journal-template.md",
+    "folder": "Journal/Yearly Journal",
+    "enabled": true
   }
 }
