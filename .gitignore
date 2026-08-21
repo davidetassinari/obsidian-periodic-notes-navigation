@@ -1,0 +1,16 @@
+﻿# Clasp credentials (never commit these)
+.clasprc.json
+
+# Node modules
+node_modules/
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+NUL
+
+# Claude Code
+.claude/settings.local.json
